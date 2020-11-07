@@ -1,0 +1,571 @@
+.authform{
+    width: 300px;
+}
+
+.auth_container{
+    display: grid;
+    grid-template-areas: "blank1 login blank2";
+    grid-template-columns: 4fr 2fr 4fr; 
+    position : relative;
+}
+
+.routine_container{
+    display: grid;
+    grid-template-areas: "blank5 center blank6";
+    grid-template-columns: 0fr 10fr 0fr; 
+    position : relative;
+}
+
+
+.center{
+    grid-area: center;
+    margin-top : 30px;
+}
+.blank1 {
+    grid-area: blank1;
+}
+.blank5 {
+    grid-area: blank5;
+}
+.blank6 {
+    grid-area: blank6;
+}
+.blank2 {
+    grid-area: blank2;
+}
+
+.login {
+    grid-area: login;
+    margin-top : 70px;
+}
+
+.form_label{
+    font-size : 15px;
+}
+
+.profile{
+    font-size : 15px;
+    padding : 20px;
+}
+
+
+
+.on_mon {
+    font-size : 20px;
+    background-color: #5383E3;
+}
+
+.off_mon {
+    font-size : 20px;
+    background-color: white;
+}
+
+button {border:0.5px solid black; background-color:transparent; cursor:pointer;}
+
+.on-dead {
+    font-size : 20px;
+    transition-delay: 5ms;
+}
+
+.off-dead {
+    display : None;
+}
+
+.login_container{
+    display : grid;
+    position: relative;
+    margin: auto;
+    width : 100%;
+    max-height: 950px;
+    grid-template-areas: "topi topi topi"
+                         "login_blank1 login_form login_blank2"
+                         " login_blank3 login_blank3 login_blank3";
+    grid-template-rows: 80px 18fr 1fr;
+    grid-template-columns: 4fr 2fr 4fr;
+}
+
+.topi {
+    grid-area: topi;
+  } 
+
+.login_blank1 {
+    grid-area: login_blank1;
+  } 
+
+  .login_blank2 {
+    grid-area: login_blank2;
+  }
+
+  .login_blank3 {
+    grid-area: login_blank3;
+  }
+
+  .login_form {
+    grid-area: login_form;
+    padding-top: 50px;
+  } 
+
+.user_container{
+    display : grid;
+    position: relative;
+    margin: auto;
+    grid-template-areas: "user_blank1 user user_blank2"
+                         "nav1 nav2 nav3"
+                         "user_blank3 content user_blank4";
+    grid-template-rows: 220px 28px 700px;
+    grid-template-columns: 1.5fr 7fr 1.5fr;
+    margin-top : 20px;
+    background-color: white;
+    font-family: 'NanumBarunGothic';
+}
+.user {
+    grid-area: user;
+  } 
+
+  .nav1 {
+    grid-area: nav1;
+    border-bottom : 1px solid rgba(0, 0, 0, 0.082);
+  } 
+
+  .nav3 {
+    grid-area: nav3;
+    border-bottom : 1px solid rgba(0, 0, 0, 0.082);
+  } 
+
+  .nav2 {
+    grid-area: nav2;
+    justify-items: center;
+    border-bottom : 1px solid rgba(0, 0, 0, 0.082);
+  } 
+
+  .content {
+    grid-area: content;
+  } 
+
+  .footer {
+    grid-area: footer;
+    background-color: #5383E3;
+    padding : 70px 200px;
+    color : rgba(255, 255, 255, 0.719);
+    font-family: 'NanumBarunGothic';
+  } 
+
+.routine_box {
+    border : 1px solid black;
+}
+
+.user_blank1 {
+    grid-area: user_blank1;
+  } 
+
+  .user_blank2 {
+    grid-area: user_blank2;
+  } 
+
+  .user_blank3 {
+    grid-area: user_blank3;
+  } 
+
+  .navi_1 {
+    display : grid;
+    height : 523px;
+    width : 200px;
+    margin : 20px;
+    background-color: rgba(243, 243, 243, 0.534);
+    grid-template-areas: "navi_title"
+                         "navis1"
+                         "navis2"
+                         "navis3"
+                         "navis4"
+                         "navis5";
+    grid-template-rows: 100px 50px 50px 50px 50px 50px;
+    grid-template-columns: 200px;
+    font-family: 'NanumBarunGothic';
+    box-shadow:2px 2px 2px 2px rgb(209, 209, 209);
+  } 
+
+  .navi_title {
+    grid-area: navi_title;
+    padding-top : 40px;
+    text-align: center;
+    font-family: 'yg-jalnan';
+
+  }
+
+  .navis1 {
+    grid-area: navis1;
+    text-align: center;
+    padding-top : 15px;
+    border-top : 0.02px solid black;
+    font-size: 15px;
+    color : black;
+  }
+
+  .navis1:hover {
+    text-decoration: none;
+    background-color: #5383E3;
+    color : white;
+  }
+
+  .navis2:hover {
+    text-decoration: none;
+    background-color: #5383E3;
+    color : white;
+  }
+
+  .navis3:hover {
+    text-decoration: none;
+    background-color: #5383E3;
+    color : white;
+  }
+
+  .navis4:hover {
+    text-decoration: none;
+    background-color: #5383E3;
+    color : white;
+  }
+
+  .navis5:hover {
+    text-decoration: none;
+    background-color: #5383E3;
+    color : white;
+  }
+  .navis2 {
+    grid-area: navis2;
+    text-align: center;
+    padding-top : 15px;
+    border-top : 0.02px solid black;
+    font-size: 15px;
+    color : black;
+  }
+
+  .navis3 {
+    grid-area: navis3;
+    text-align: center;
+    padding-top : 15px;
+    border-top : 0.02px solid black;
+    font-size: 15px;
+    color : black;
+  }
+
+  .navis4 {
+    grid-area: navis4;
+    text-align: center;
+    padding-top : 15px;  
+    border-top : 0.02px solid black;
+    color : black;
+    font-size: 15px;
+}
+  .navis5 {
+    grid-area: navis5;
+    text-align: center;
+    padding-top : 15px;
+    border-top : 0.02px solid black;
+    border-bottom : 0.02px solid black;
+    color : black;
+    font-size: 15px;
+  }
+ 
+  
+.table_container{
+    display: grid;
+    grid-template-areas: "blank7 table blank8";
+    grid-template-columns: 0fr 10fr 0fr; 
+    grid-template-rows: 10fr; 
+    position : relative;
+}
+table.table1{
+    width : 900px;
+    height : 520px;
+    border-collapse: collapse;
+    border-spacing: 2px;
+    text-align: center;
+    line-height: 1.5;
+    margin: 20px 10px;
+    box-shadow:2px 2px 2px 2px rgb(209, 209, 209);
+}
+
+.table{
+    grid-area: table;
+    padding-left: 25px;;
+}
+
+.table_nav{
+    grid-area: table_nav;
+    padding : 20px;
+    justify-items: center;
+    border-bottom : 1px solid rgba(0, 0, 0, 0.082);
+}
+
+table.table1 th {
+    width: 130px;
+    padding: 10px;
+    vertical-align: top;
+    color: #fff;
+    background: #5383E3;
+    font-size : 14px;
+    height : 40px;  font-family: 'yg-jalnan';
+}
+
+table.table1 td {
+    width: 130px;
+    padding: 10px;
+    vertical-align: top;
+    border: 0.5px solid rgb(133, 133, 133);
+    background: #eee;
+    font-size : 12px;
+}
+
+.nav_blank7{
+    grid-area : nav_blank7;
+    border-bottom : 1px solid rgba(0, 0, 0, 0.712);
+}
+
+.nav_blank8{
+    grid-area : nav_blank8;
+    border-bottom : 1px solid rgba(0, 0, 0, 0.082);
+}
+
+.blank7 {
+    grid-area: blank7;
+  } 
+.blank8 {
+    grid-area: blank8;
+  } 
+
+.table_title{
+    font-size : 15px;
+    text-align: center;
+}
+
+.on_routine{
+    background: #5383E3;
+    z-index : 99
+}
+
+.off_routine{
+    background: #5383E3;
+    z-index : 0
+}
+
+.user_link{
+    font-size : 15px;
+    color : rgba(255, 255, 255, 0.623);
+    width : 100px;
+    text-align: center;
+    height : 40px;
+    border-top : 1px solid rgb(168, 168, 168);
+    border-left : 1px solid rgb(168, 168, 168);
+    border-right : 1px solid rgb(168, 168, 168);
+    padding : 7px;
+    background-color: rgba(243, 243, 243, 0.534);
+
+}
+
+.where_link{
+    font-size : 15px;
+    color : rgb(255, 255, 255);
+    width : 100px;
+    text-align: center;
+    height : 40px;
+    border : 1px solid rgb(168, 168, 168);
+    margin : 5px 10px 0px 10px;
+    border-radius: 5px;
+    padding : 7px;
+    background-color: rgba(243, 243, 243, 0.534);
+
+}
+
+.back_link{
+    font-size : 15px;
+    width : 130px;
+    text-align: center;
+    height : 40px;
+    border : 1px solid rgb(168, 168, 168);
+    margin : 5px 10px 0px 10px;
+    border-radius: 5px;
+    padding : 7px;
+    background-color: rgba(243, 243, 243, 0.534);
+
+}
+
+.user_link_on{
+    font-size : 15px;
+    color : rgb(230, 230, 230);
+    width : 100px;
+    text-align: center;
+    height : 40px;
+    border-top : 1px solid rgb(168, 168, 168);
+    border-left : 1px solid rgb(168, 168, 168);
+    border-right : 1px solid rgb(168, 168, 168);
+    padding : 7px;
+    background-color: #5383E3;
+}
+
+.navi_link_on{
+    font-size : 15px;
+    color : rgb(230, 230, 230);
+    text-align: center;
+    border-top : 1px solid rgb(168, 168, 168);
+    padding : 20px;
+    background-color: #5383E3;
+}
+
+.navi_link{
+    font-size : 15px;
+    color : black;
+    text-align: center;
+    border-top : 1px solid rgb(168, 168, 168);
+    padding : 20px;
+    background-color: white;
+}
+
+.where_link_on{
+    font-size : 15px;
+    color : rgb(255, 255, 255);
+    width : 100px;
+    text-align: center;
+    height : 40px;
+    border : 1px solid rgb(168, 168, 168);
+    margin : 5px 10px 0px 10px;
+    border-radius: 5px;
+    padding : 7px;
+    background-color: #5383E3;
+}
+
+.user_link2{
+    font-size : 15px;
+    color : rgb(255, 255, 255);
+}
+
+
+.user_link:visited{
+    color : black;
+    text-decoration: none;
+}
+
+.user_link:hover{
+    text-decoration: none;
+    background-color: #5383E3;
+}
+
+.user_link:active{
+    color : rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: #5383E3;
+}
+
+.user_link_on:visited{
+    color : white;
+    text-decoration: none;
+}
+
+.back_link:hover{
+    text-decoration: none;
+    background-color: #5383E3;
+}
+
+.back_link:active{
+    color : rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: #5383E3;
+}
+
+.back_link_on:visited{
+    color : black;
+    text-decoration: none;
+}
+
+.user_link_on:hover{
+    text-decoration: none;
+    background-color: #5383E3;
+    color : black;
+}
+
+.user_link_on:active{
+    color : white;
+    text-decoration: none;
+    background-color: #5383E3;
+}
+
+.routine_grid{
+    display: grid;
+    grid-template-areas: "blank7 grid_title blank8"
+                         "blank7 days blank8"
+                         "blank7 warning blank8"
+                         "blank7 where blank8";
+    grid-template-columns: 1fr 8fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 7fr;
+    height : 600px;
+    position : relative;
+    padding-top : 20px;
+}
+
+.grid_title {
+    grid-area: grid_title;
+    padding-top : 15px;
+    text-align: center;
+    font-family: 'yg-jalnan';
+  }
+
+  .warning {
+    grid-area: warning;
+    padding-top : 15px;
+    text-align: center;
+    font-family: 'yg-jalnan';
+  }
+
+.days {
+    grid-area: days;
+    font-family: 'NanumBarunGothic';
+    padding-top : 15px;
+  } 
+
+  .where {
+    grid-area: where;
+    font-family: 'NanumBarunGothic';
+  } 
+
+.user_info{
+    display: grid;
+    height: 180px;
+    grid-template-areas: "info_blank1 user_img info info_blank2"
+                         "info_blank3 user_img info info_blank4";
+    grid-template-columns: 1fr 2fr 6fr 1fr; 
+    grid-template-rows : 3fr 7fr;
+    position : relative;
+    font-family: 'NanumBarunGothic';
+
+}
+.info_blank1 {
+    grid-area: info_blank1;
+  } 
+
+.info_blank2 {
+    grid-area: info_blank2;
+  } 
+
+  .info_blank3 {
+    grid-area: info_blank3;
+  } 
+
+  .info_blank4 {
+    grid-area: info_blank4;
+  } 
+
+  .info {
+    grid-area: info;
+    padding : 50px 15px 0px 100px;
+    background-color: rgba(231, 231, 231, 0.795);
+    box-shadow:2px 2px 2px 2px rgb(209, 209, 209);
+  } 
+
+  .user_img {
+    grid-area: user_img;
+    padding : 75px;
+    border-right: 0.5px solid black;
+    background-color: rgba(231, 231, 231, 0.795);
+    box-shadow:2px 2px 2px 2px rgb(209, 209, 209);
+  } 
+
+@font-face { font-family: 'NanumBarunGothic'; font-style: normal; font-weight: 400; src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot'); src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype'); } @font-face { font-family: 'NanumBarunGothic'; font-style: normal; font-weight: 700; src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot'); src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype') } @font-face { font-family: 'NanumBarunGothic'; font-style: normal; font-weight: 300; src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot'); src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype'); } .nanumbarungothic * { font-family: 'NanumBarunGothic', sans-serif; }
